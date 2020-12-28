@@ -144,4 +144,9 @@ export CXX=clang++-10
 # Vim
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+
+# Alacritty
 source "$HOME/.cargo/env"
+
+# Doom Emacs
+export PATH=”$HOME/.emacs.d/bin:$PATH”

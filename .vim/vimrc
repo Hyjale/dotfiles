@@ -20,6 +20,11 @@ if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
 
+if exists("g:ctrl_user_command")
+    unlet g:ctrlp_user_command
+endif
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/vendor/*,*/\.git/*
+
 " toggle search highlighting "
 set hlsearch!
 nnoremap <F2> :set hlsearch!<CR>
@@ -33,3 +38,8 @@ nnoremap L gt
 
 " stop insert comment character in new line "
 set formatoptions-=ro
+
+" faster Vim ? "
+set clipboard=exclude:.*
+set timeoutlen=1000
+set ttimeoutlen=0
