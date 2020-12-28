@@ -144,3 +144,4 @@ export CXX=clang++-10
 # Vim
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+source "$HOME/.cargo/env"
