@@ -147,6 +147,3 @@ export LC_ALL=en_US.UTF-8
 
 # Alacritty
 source "$HOME/.cargo/env"
-
-# Doom Emacs
-export PATH=”$HOME/.emacs.d/bin:$PATH”
