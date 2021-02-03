@@ -55,3 +55,5 @@
 
 (setq doom-font (font-spec :family "Fira Code" :size 15))
 (setq display-line-numbers-type nil)
+
+(setq org-agenda-start-on-weekday nil)
