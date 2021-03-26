@@ -137,7 +137,7 @@ unset __conda_setup
 # ILLIXR
 export XR_RUNTIME_JSON=/home/hyjale/Desktop/illixr/monado/build/openxr_monado-dev.json
 export ILLIXR_PATH=/home/hyjale/Desktop/illixr/ILLIXR/runtime/plugin.dbg.so
-export ILLIXR_COMP=/home/hyjale/Desktop/illixr/ILLIXR/offline_imu_cam/plugin.dbg.so:/home/hyjale/Desktop/illixr/ILLIXR/.cache/paths/https%c%s%sgithub.com%sILLIXR%sopen_vins.git/plugin.dbg.so:/home/hyjale/Desktop/illixr/ILLIXR/gtsam_integrator/plugin.dbg.so:/home/hyjale/Desktop/illixr/ILLIXR/pose_prediction/plugin.dbg.so:
+export ILLIXR_COMP=/home/hyjale/Desktop/illixr/ILLIXR/zed/plugin.dbg.so:/home/hyjale/Desktop/illixr/ILLIXR/.cache/paths/https%c%s%sgithub.com%sILLIXR%sopen_vins.git/plugin.dbg.so:/home/hyjale/Desktop/illixr/ILLIXR/gtsam_integrator/plugin.dbg.so:/home/hyjale/Desktop/illixr/ILLIXR/pose_prediction/plugin.dbg.so:
 export ILLIXR_DATA=/home/hyjale/Desktop/illixr/ILLIXR/data1
 export CXX=clang++-10
 
@@ -147,3 +147,10 @@ export LC_ALL=en_US.UTF-8
 
 # Alacritty
 source "$HOME/.cargo/env"
+
+# CUDA
+export PATH=/usr/local/cuda-11.0/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-11.0/lib64:$LD_LIBRARY_PATH
+
+# Monado
+export NS_CONFIG_PATH=/home/hyjale/Desktop/illixr/monado/src/xrt/drivers/north_star/exampleconfigs/v2_deckx_50cm.json
