@@ -135,9 +135,10 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 # ILLIXR
+# export XR_RUNTIME_JSON=/home/hyjale/Desktop/illixr/ILLIXR/.cache/paths/https%c%s%sgitlab.freedesktop.org%smonado%smonado.git/build/openxr_monado-dev.json
 export XR_RUNTIME_JSON=/home/hyjale/Desktop/illixr/monado/build/openxr_monado-dev.json
-export ILLIXR_PATH=/home/hyjale/Desktop/illixr/ILLIXR/runtime/plugin.dbg.so
-export ILLIXR_COMP=/home/hyjale/Desktop/illixr/ILLIXR/zed/plugin.dbg.so:/home/hyjale/Desktop/illixr/ILLIXR/.cache/paths/https%c%s%sgithub.com%sILLIXR%sopen_vins.git/plugin.dbg.so:/home/hyjale/Desktop/illixr/ILLIXR/gtsam_integrator/plugin.dbg.so:/home/hyjale/Desktop/illixr/ILLIXR/pose_prediction/plugin.dbg.so:
+export ILLIXR_PATH=/home/hyjale/Desktop/illixr/ILLIXR/runtime/plugin.opt.so
+export ILLIXR_COMP=/home/hyjale/Desktop/illixr/ILLIXR/zed/plugin.opt.so:/home/hyjale/Desktop/illixr/ILLIXR/.cache/paths/https%c%s%sgithub.com%sILLIXR%sopen_vins.git/plugin.opt.so:/home/hyjale/Desktop/illixr/ILLIXR/gtsam_integrator/plugin.opt.so:/home/hyjale/Desktop/illixr/ILLIXR/pose_prediction/plugin.opt.so:
 export ILLIXR_DATA=/home/hyjale/Desktop/illixr/ILLIXR/data1
 export CXX=clang++-10
 
@@ -154,3 +155,15 @@ export LD_LIBRARY_PATH=/usr/local/cuda-11.0/lib64:$LD_LIBRARY_PATH
 
 # Monado
 export NS_CONFIG_PATH=/home/hyjale/Desktop/illixr/monado/src/xrt/drivers/north_star/exampleconfigs/v2_deckx_50cm.json
+ 
+# Vulkan
+export VULKAN_SDK=/home/user/VulkanSDK/1.2.170.0/x86_64
+export PATH=$VULKAN_SDK/bin:$PATH
+export LD_LIBRARY_PATH=$VULKAN_SDK/lib:$LD_LIBRARY_PATH
+export VK_LAYER_PATH=$VULKAN_SDK/etc/explicit_layer.d
+
+# StereoKit
+[[ -s "$HOME/.xmake/profile" ]] && source "$HOME/.xmake/profile" # load xmake profile
+
+# Swift
+export PATH=/home/hyjale/swift-5.4/usr/bin:"${PATH}"
