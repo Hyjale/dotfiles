@@ -167,3 +167,6 @@ export VK_LAYER_PATH=$VULKAN_SDK/etc/explicit_layer.d
 
 # Swift
 export PATH=/home/hyjale/swift-5.4/usr/bin:"${PATH}"
+
+# Rust
+. "$HOME/.cargo/env"
