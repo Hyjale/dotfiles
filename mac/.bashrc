@@ -124,7 +124,10 @@ export LC_ALL=en_US.UTF-8
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Alacritty
-source /Users/jae/extra/completions/alacritty.bash
+source ~/.bash_completion/alacritty
 
 # Emacs
 export PATH="/Applications/MacPorts/Emacs.app/Contents/MacOS:$PATH"
+
+# Rust
+. "$HOME/.cargo/env"
