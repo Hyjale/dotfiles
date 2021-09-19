@@ -26,9 +26,16 @@ colors:
     cyan:    '0x46d9ff'
     white:   '0xbbc2cf'
 
+# Tmux on startup
 shell:
   program: /bin/bash
   args:
     - -l
     - -c
     - "tmux attach || tmux"
+
+# Window startup size (hand-tuned for 13-inch MBP)
+window:
+   dimensions:
+     columns: 160
+     lines: 45
