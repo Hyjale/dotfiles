@@ -131,3 +131,8 @@ export PATH="/Applications/MacPorts/Emacs.app/Contents/MacOS:$PATH"
 
 # Rust
 . "$HOME/.cargo/env"
+
+# Android Studio
+export JAVA_HOME=/Applications/Android\ Studio.app/Contents/jre/Contents/Home
+export ANDROID_HOME=/Users/jae/Library/Android/sdk
+export ANDROID_NDK_HOME=/Users/jae/Library/Android/sdk/ndk/23.1.7779620
